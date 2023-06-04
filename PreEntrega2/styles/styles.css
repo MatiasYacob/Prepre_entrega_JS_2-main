@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+   
+    background-color: black;
+    
+    
+}
+
+p{
+margin-top: 25%;
+    scale: 100%;
+    font-size: xx-large;
+    color: #fcfcfc;
+}
