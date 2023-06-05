@@ -34,9 +34,8 @@ function ingresarArticulo() {
 
     let nuevoArticulo = new Articulo(nombre, stock, precioMayorista, precioMinorista);
     articulos.push(nuevoArticulo);
-
     alert('Articulo ingreasdo con exito!');
-    console.log(articulos);
+    
 }
 
 // Funcion para quitar un Articulo
@@ -70,9 +69,9 @@ function consultarArticulos() {
     let sumaPrecioMinorista = 0;
     articulos.forEach(item => {
         contenido += item.nombre + ": Stock: " + item.stock + " Precio Mayorista: $" + item.precioMayorista + " Precio Minorista: $" + item.precioMinorista + '\n';
-        sumaPrecioMayorista += item.precioMayorista * item.stock;
+        sumaPrecioMayorista += item.precioMayorista * item.stock; 
         sumaPrecioMinorista += item.precioMinorista * item.stock;
-    });
+    });//originalmente no sumaba estos volares solo lo puse porque no lo vi necesario pero luego de leer la consigna vi que decia que habiar que tener operaciones matematicas espero sea suficiente
     contenido += "\nSuma total del Valor de la mercaderia:\n";
     contenido += "Valor Mayorista Total: $" + sumaPrecioMayorista + '\n';
     contenido += "Valor Minorista Total: $" + sumaPrecioMinorista;
