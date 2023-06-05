@@ -11,18 +11,18 @@ class Articulo {
 const articulos = [];
 // Inicio del programa
 while (true) {
-    const opcion = prompt('Seleccione una opción:\n1. Ingresar artículo nuevo\n2. Consultar artículos\n3. Quitar artículo\n4. Salir');
+    const opcion = prompt('Seleccione una opcion:\n1. Ingresar Articulo nuevo\n2. Consultar Articulos\n3. Quitar Articulo \n4. Salir');
 
     if (opcion === '1') {
         ingresarArticulo();
     } else if (opcion === '2') {
         consultarArticulos();
-    } else if (opcion === '3') {
+    }else if (opcion === '3') {
         quitarArticulo();
     } else if (opcion === '4') {
         alert('Programa finalizado.');
         break;
     } else {
-        alert('Opción inválida. Por favor, seleccione una opción válida.');
+        alert('Opcion Invalida');
     }
 }
